@@ -1,0 +1,38 @@
+     [echo] JUNIT: /snap/eclipse/48/plugins
+     [echo] ANT_HOME: /snap/eclipse/48/plugins/org.apache.ant_1.10.7.v20190926-0324
+     [echo] /home/jwfree/dev/cs681/HW05/bin
+
+init:
+
+compile:
+    [javac] Compiling 2 source files to /home/jwfree/dev/cs681/HW05/bin
+
+jar:
+      [jar] Building jar: /home/jwfree/dev/cs681/HW05/bin/RunnablePrimeGenerator.jar
+
+run:
+     [java] 
+     [java] 148933 prime numbers are found in total using 1 thread.
+     [java] 
+     [java] 148933 prime numbers are found in total using 2 threads.
+     [java] 
+     [java] 148933 prime numbers are found in total using 4 threads.
+     [java] 
+     [java] 148933 prime numbers are found in total using 8 threads.
+     [java] 
+     [java] 148933 prime numbers are found in total using 16 threads.
+     [java] 
+     [java] One thread run time:      3123133166
+     [java] 
+     [java] Two threads run time:     2043227834
+     [java] 
+     [java] Four threads run time:    1166423091
+     [java] 
+     [java] Eight threads run time:   795718702
+     [java] 
+     [java] Sixteen threads run time: 503103785
+
+clean:
+
+BUILD SUCCESSFUL
+Total time: 8 seconds
