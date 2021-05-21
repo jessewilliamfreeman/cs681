@@ -28,22 +28,24 @@
 		
 		<javac srcdir="${src}" destdir="${bin}" includeAntRuntime="no">
 			<classpath refid="classpath"/>
-			<include name="edu/umb/cs681/hw13/AccessCounter.java"/>
-			<include name="edu/umb/cs681/hw13/RequestHandler.java"/>
+			<include name="edu/umb/cs681/hw15/AdmissionMonitor.java"/>
+			<include name="edu/umb/cs681/hw15/EntranceHandler.java"/>
+			<include name="edu/umb/cs681/hw15/ExitHandler.java"/>
+			<include name="edu/umb/cs681/hw15/StatsHandler.java"/>
 		</javac>
 	
 	</target>
 
 	<target name="jar" depends="compile">
-		<jar destfile="${bin}/RequestHandler.jar" basedir="${bin}">
+		<jar destfile="${bin}/AdmissionMonitor.jar" basedir="${bin}">
 			<manifest>
-				<attribute name="Main-Class" value="edu.umb.cs681.hw13.RequestHandler"/>
+				<attribute name="Main-Class" value="edu.umb.cs681.hw15.AdmissionMonitor"/>
 			</manifest>
         </jar>
 	</target>
 
 	<target name="run" depends="jar">
-		<java jar="${bin}/RequestHandler.jar" fork="true"/>
+		<java jar="${bin}/AdmissionMonitor.jar" fork="true"/>
 	</target>
 	
 	<target name="clean" depends="run">
