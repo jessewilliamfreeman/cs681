@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class ConcurrentSingleton {
 	private ConcurrentSingleton() {};
-	private static AtomicReference<ConcurrentSingleton> instance = new AtomicReference(null);
+	private static AtomicReference<ConcurrentSingleton> instance = new AtomicReference<ConcurrentSingleton>(null);
 	
 	public static ConcurrentSingleton getInstance() {
 		if (instance.get() == null) {
